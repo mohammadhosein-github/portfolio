@@ -1,0 +1,53 @@
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+
+
+$primary-color: #fdd5c8;
+$secondary-color: darken($primary-color, 15);
+
+@mixin lg-size(){
+  @media (max-width: 1200px){
+    @content;
+  }
+}
+@mixin md-size(){
+  @media (max-width: 991px){
+    @content;
+  }
+}
+@mixin sm-size(){
+  @media (max-width: 767px){
+    @content;
+  }
+}
+
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.section-padding{
+  padding: 60px 0 40px;
+}
+.my-section{
+  width: 100%;
+}
+p{
+  direction: rtl;
+}
+
+
+
+
+
+@import './components/Header/Header';
+@import './components/Projects/project';
+@import './components/About/About';
+
+
