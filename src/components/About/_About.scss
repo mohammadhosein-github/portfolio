@@ -1,31 +1,59 @@
 .about-me{
-    background-color: #f5f5f5;
+    background-color: #f3f3f3;
+    position: relative;
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: url('../../images/about-bg5.jpg');
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    //     background-attachment: fixed;
+    //     opacity: 0.8;
+    // }
     .title-container{
         margin-bottom: 2rem;
         .my-title{
+            display: inline-block;
             position: relative;
             font-weight: 400;
-            padding: 0px 20px;
+            padding: 0px 10px 10px;
+            border-radius: 3px;
             &::before{
                 content: '';
                 position: absolute;
-                bottom: 10px;
+                top: 50%;
                 right: 0;
-                height: 3px;
-                width: 15px;
+                transform: translateY(-50%);
+                width: 3px;
+                height: 60%;
                 background-color: $secondary-color;
-                transition: 0.3s;
             }
-            &:hover{
-                &::before{
-                    background-color: blue;
-                    transform: rotate(90deg);
-                    width: 20px;
-                }
-            }
+            // &::before{
+            //     content: '';
+            //     position: absolute;
+            //     bottom: 50%;
+            //     right: 10px;
+            //     transform: translateY(-50%);
+            //     height: 3px;
+            //     width: 15px;
+            //     background-color: darken($secondary-color, 4);
+            //     transition: 0.3s;
+            // }
+            // &:hover{
+            //     &::before{
+            //         transform: rotate(90deg);
+            //         width: 20px;
+            //     }
+            // }
         }
     }
     .row{
+        direction: rtl;
         .my-card{
             position: relative;
             margin-bottom: 30px;
@@ -56,7 +84,7 @@
                     min-height: 97px;
                 }
                 @include md-size(){
-                    min-height: 120px;
+                    min-height: 145px;
                 }
                 @include sm-size(){
                     min-height: auto;
@@ -69,7 +97,7 @@
                 left: 0;
                 width: 0;
                 height: 100%;
-                background-color: #333;
+                background-color: #1d1c21;
                 opacity: 0;
                 transition: 0.5s;
                 z-index: -1;

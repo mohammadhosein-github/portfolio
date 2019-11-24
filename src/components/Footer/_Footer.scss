@@ -1,0 +1,45 @@
+.footer{
+    padding: 30px 0;
+    background-color: #1d1c21;
+    color: #fff;
+    p{
+        line-height: 30px;
+        direction: ltr;
+        color: #fff;
+        text-transform: capitalize;
+        a{
+            color: $secondary-color;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        @include md-size(){
+            text-align: center;
+        }
+    }
+    .icon-container{
+        a{
+            position: relative;
+            margin-right: 20px;
+            padding-bottom: 10px;
+            i{
+                font-size: 30px;
+                color: #fff;
+                -webkit-text-fill-color: #1d1c21;
+                -webkit-text-stroke-width: .5px;
+                -webkit-text-stroke-color: #fff;
+                transition: 0.3s;
+            }
+            &:hover{
+                i{
+                    color: $secondary-color;
+                    -webkit-text-stroke-color: $secondary-color;
+                }
+            }
+        }
+        @include md-size(){
+            text-align: center !important;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.contact{
+    .title-container{
+        margin-bottom: 2rem;
+        h3{
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 0;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 1px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 2px;
+                background-color: rgba(0, 0, 0, .1);
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40px;
+                height: 4px;
+                background-color: $secondary-color;
+            }
+        }
+    }
+    .row{
+        .icons{
+            p{
+                position: relative;
+                word-wrap: break-word;
+                text-align: left;
+                padding: 0 10px 0 50px;
+                margin: 0 0 20px;
+                i{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 30px;
+                    color: $secondary-color;
+                }
+            }
+            .email{
+                @include lg-size(){
+                    margin-bottom: 20px;
+                }
+            }
+            .phone-number{
+                line-height: 30px;
+                @include lg-size(){
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+        form{
+            input, textarea{
+                direction: rtl;
+                margin-bottom: 15px;
+                &:focus{
+                    box-shadow: 0 0 0 0.2rem $primary-color;
+                    border-color: $secondary-color;
+                }
+            }
+            .my-btn{
+                background-color: $secondary-color;
+                border: $secondary-color;
+                font-weight: 500;
+                padding: 8px 35px;
+                &:active{
+                    background-color: #fff;
+                    color: $secondary-color;
+                }
+                &.btn-primary:not(:disabled):not(.disabled):active:focus{
+                    box-shadow: 0 0 0 0.2rem $primary-color;
+                    border-color: $secondary-color;
+                }
+                &:focus{
+                    box-shadow: 0 0 0 0.2rem $primary-color;
+                    border-color: $secondary-color;
+                    background-color: #fff;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

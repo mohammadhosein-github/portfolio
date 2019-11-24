@@ -5,6 +5,7 @@
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 
 
+
 $primary-color: #fdd5c8;
 $secondary-color: darken($primary-color, 15);
 
@@ -41,7 +42,9 @@ body{
 p{
   direction: rtl;
 }
-
+.my-title{
+  font-weight: 400;
+}
 
 
 
@@ -49,5 +52,6 @@ p{
 @import './components/Header/Header';
 @import './components/Projects/project';
 @import './components/About/About';
-
+@import './components/Contact/contact';
+@import './components/Footer/Footer';
 
