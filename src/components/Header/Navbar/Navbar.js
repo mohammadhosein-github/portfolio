@@ -61,15 +61,5 @@ class theNavbar extends Component{
   }
 }
 
-// function theNavbar() {
-
-//     const [isOpen, setOpen] = useState(false);
-
-//     const openNavbar = () => {
-//       setOpen(!isOpen);
-//     }
-    
-    
-// }
 
 export default theNavbar;

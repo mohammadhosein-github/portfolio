@@ -150,7 +150,6 @@ $h1-color: #eff4f5;
             .text-area{
                 direction: rtl;
                 color: #fff;
-                // margin-right: 30px;
                 @include sm-size(){
                     order: 2;
                     display: flex;

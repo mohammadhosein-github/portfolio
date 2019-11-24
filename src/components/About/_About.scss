@@ -1,20 +1,6 @@
 .about-me{
     background-color: #f3f3f3;
     position: relative;
-    // &::before{
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image: url('../../images/about-bg5.jpg');
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     background-position: center center;
-    //     background-attachment: fixed;
-    //     opacity: 0.8;
-    // }
     .title-container{
         margin-bottom: 2rem;
         .my-title{
@@ -33,23 +19,6 @@
                 height: 60%;
                 background-color: $secondary-color;
             }
-            // &::before{
-            //     content: '';
-            //     position: absolute;
-            //     bottom: 50%;
-            //     right: 10px;
-            //     transform: translateY(-50%);
-            //     height: 3px;
-            //     width: 15px;
-            //     background-color: darken($secondary-color, 4);
-            //     transition: 0.3s;
-            // }
-            // &:hover{
-            //     &::before{
-            //         transform: rotate(90deg);
-            //         width: 20px;
-            //     }
-            // }
         }
     }
     .row{
