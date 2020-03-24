@@ -1,4 +1,3 @@
-
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
@@ -9,40 +8,51 @@
 $primary-color: #fdd5c8;
 $secondary-color: darken($primary-color, 15);
 
-@mixin lg-size(){
-  @media (max-width: 1200px){
+@mixin lg-size() {
+  @media (max-width: 1200px) {
     @content;
   }
 }
-@mixin md-size(){
-  @media (max-width: 991px){
+
+@mixin md-size() {
+  @media (max-width: 991px) {
     @content;
   }
 }
-@mixin sm-size(){
-  @media (max-width: 767px){
+
+@mixin sm-size() {
+  @media (max-width: 767px) {
     @content;
   }
 }
 
 
-*{
+* {
   box-sizing: border-box;
 }
-body{
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
-.section-padding{
+
+.section-padding {
   padding: 60px 0 40px;
 }
-.my-section{
+
+.my-section {
   width: 100%;
 }
-p{
+
+p {
   direction: rtl;
 }
-.my-title{
+
+.my-title {
   font-weight: 400;
 }
 
@@ -54,4 +64,3 @@ p{
 @import './components/About/About';
 @import './components/Contact/contact';
 @import './components/Footer/Footer';
-
